@@ -1,0 +1,203 @@
+:root{
+    --strong-cyan:hsl(172,67%,45%);
+    --very-dark-cyan:hsl(183,100%,15%);
+    --dark-gray-cyan:hsl(186,14%,43%);
+    --gray-cyan:hsl(184,14%,56%);
+    --light-gray-cyan:hsl(185,41%,84%);
+    --white:hsl(0,0%,100%);
+    --font-size:16px;
+    --font-family: 'Space Mono', sans-serif;
+    --font-weight:700;
+    --form-font-size:24px;
+}
+::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:var(--font-size);
+    font-family:var(--font-family);
+    background-color:var(--light-gray-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    max-width: 50vw;
+}
+
+h1{
+    font-size: 1rem;
+    color: var(--very-dark-cyan);
+    font-weight: var(--font-weight);
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    line-height: 1.5;
+}
+
+.calculator__container{
+    display: flex;
+    background: var(--white);
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    width: 100%;
+}
+
+.bill__calculation{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 24vw;
+}
+
+.bill__input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    position: relative;
+}
+label{
+    color: var(--very-dark-cyan);
+    font-size: 0.8rem;
+}
+.bill__input picture{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+.bill__input input{
+    padding: 0.4rem 0.8rem;
+    border: none;
+    font-size: var(--form-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: var(--very-dark-cyan);
+    outline: none;
+    background: hsl(185,41%,84%,0.3);
+    text-align: right;
+    color: var(--very-dark-cyan);
+}
+.bill__input input::placeholder{
+    color: var(--gray-cyan);
+}
+
+.tip__selection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.tip__buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.tip__buttons input{
+    padding: 0.4rem 0.4rem;
+    color: var(--very-dark-cyan);
+    background: var(--light-gray-cyan);
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: var(--font-weight);
+    cursor: pointer;
+    width: 100%;
+}
+
+.tip__button{
+    padding: 0.4rem 0.8rem;
+    color: var(--white);
+    background: var(--very-dark-cyan);
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: var(--font-weight);
+    cursor: pointer;
+}
+
+.people__selection{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    position: relative;
+}
+.people__selection picture{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+}
+.people__selection input{
+    padding: 0.4rem 0.8rem;
+    border: none;
+    font-size: var(--form-font-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: var(--very-dark-cyan);
+    outline: none;
+    background: hsl(185,41%,84%,0.3);
+    text-align: right;
+    color: var(--very-dark-cyan);
+}
+.people__selection input::placeholder{
+    color: var(--gray-cyan);
+}
+
+.recipt__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: var(--very-dark-cyan);
+    border-radius: 0.8rem;
+    width: 24vw;
+}
+
+.recipt__calculation{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.recipt__calculation__row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipt__calculation__row__item p:first-child{
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: var(--font-weight);
+}
+.recipt__calculation__row__item p:last-child{
+    color: var(--gray-cyan);
+    font-size: 0.6rem;
+}
+
+.recipt__calculation__row__value{
+    color: var(--strong-cyan);
+    font-size: 2rem;
+    font-weight: var(--font-weight);
+}
+.reset__button{
+    padding: 0.8em;
+    color: var(--very-dark-cyan);
+    background: var(--strong-cyan);
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: var(--font-weight);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}

@@ -5,40 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Bill
+  <main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <section>
+      <h1>Spli<br/>tter</h1>
+      <div class="calculator__container">
+        <div class="bill__calculation">
+          <div class="bill__input">
+            <picture>
+              <source srcset="./images/icon-rupee.svg" type="image/svg+xml">
+              <img src="./images/icon-rupee.svg" alt="dollar icon">
+            </picture>
+            <label for="bill">Bill</label>
+            <input type="number" id="bill" placeholder="0">
+          </div>
+          <div class="tip__selection">
+            <label for="tip">Select Tip %</label>
+            <div class="tip__buttons">
+              <button class="tip__button">5%</button>
+              <button class="tip__button">10%</button>
+              <button class="tip__button">15%</button>
+              <button class="tip__button">25%</button>
+              <button class="tip__button">50%</button>
+              <input type="number" id="custom__tip" placeholder="Custom">
+            </div>
+          </div>
+          <div class="people__selection">
+            <picture>
+              <source srcset="./images/icon-person.svg" type="image/svg+xml">
+              <img src="./images/icon-person.svg" alt="person icon">
+            </picture>
+            <label for="people">Number of People</label>
+            <input type="number" id="people" placeholder="0">
+          </div>
+        </div>
+        <div class="recipt__container">
+          <div class="recipt__calculation">
+            <div class="recipt__calculation__row">
+              <div class="recipt__calculation__row__item">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+              </div>
+              <div class="recipt__calculation__row__value">
+                <p id="tip__amount">₹4.27</p>
+              </div>
+            </div>
+            <div class="recipt__calculation__row">
+              <div class="recipt__calculation__row__item">
+                <p>Total</p>
+                <p>/ person</p>
+              </div>
+              <div class="recipt__calculation__row__value">
+                <p id="total__amount">₹32.47</p>
+              </div>
+            </div>
+          </div>
+          <button class="reset__button">Reset</button>
 
-  Number of People
+        </div>
+      </div>
+    </section>
 
-  Tip Amount
-  / person
 
-  Total
-  / person
+  </main>
 
-  Reset
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 </body>
 </html>
