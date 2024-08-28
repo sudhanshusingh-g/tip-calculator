@@ -35,7 +35,6 @@ section{
     flex-direction: column;
     align-items: center;
     gap: 1.4rem;
-    max-width: 50vw;
 }
 
 h1{
@@ -49,6 +48,7 @@ h1{
 
 .calculator__container{
     display: flex;
+    flex-direction: column;
     background: var(--white);
     padding: 1.4rem;
     border-radius: 0.8rem;
@@ -61,7 +61,6 @@ h1{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 24vw;
 }
 
 .bill__input{
@@ -160,7 +159,6 @@ label{
     padding: 2rem 1rem;
     background: var(--very-dark-cyan);
     border-radius: 0.8rem;
-    width: 24vw;
 }
 
 .recipt__calculation{
@@ -204,4 +202,18 @@ label{
 .active{
     background: var(--strong-cyan);
     color: var(--very-dark-cyan);
+}
+
+@media screen and (min-width: 768px){
+    .calculator__container{
+        flex-direction: row;
+        gap: 1rem;
+        width: 64%;
+    }
+    .bill__calculation{
+        width: 50%;
+    }
+    .recipt__container{
+        width: 50%;
+    }
 }
