@@ -27,16 +27,16 @@
               <img src="./images/icon-rupee.svg" alt="dollar icon">
             </picture>
             <label for="bill">Bill</label>
-            <input type="number" id="bill" placeholder="0">
+            <input type="number" id="bill" step="0.01" min="0" placeholder="0">
           </div>
           <div class="tip__selection">
             <label for="tip">Select Tip %</label>
             <div class="tip__buttons">
-              <button class="tip__button">5%</button>
-              <button class="tip__button">10%</button>
-              <button class="tip__button">15%</button>
-              <button class="tip__button">25%</button>
-              <button class="tip__button">50%</button>
+              <button class="tip__button" role="button">5%</button>
+              <button class="tip__button" role="button">10%</button>
+              <button class="tip__button" role="button">15%</button>
+              <button class="tip__button" role="button">25%</button>
+              <button class="tip__button" role="button">50%</button>
               <input type="number" id="custom__tip" placeholder="Custom">
             </div>
           </div>
@@ -46,7 +46,7 @@
               <img src="./images/icon-person.svg" alt="person icon">
             </picture>
             <label for="people">Number of People</label>
-            <input type="number" id="people" placeholder="0">
+            <input type="number" id="people" placeholder="0" min="1">
           </div>
         </div>
         <div class="recipt__container">
@@ -57,7 +57,7 @@
                 <p>/ person</p>
               </div>
               <div class="recipt__calculation__row__value">
-                <p id="tip__amount">₹4.27</p>
+                <p id="tip__amount">₹0.00</p>
               </div>
             </div>
             <div class="recipt__calculation__row">
@@ -66,7 +66,7 @@
                 <p>/ person</p>
               </div>
               <div class="recipt__calculation__row__value">
-                <p id="total__amount">₹32.47</p>
+                <p id="total__amount">₹0.00</p>
               </div>
             </div>
           </div>

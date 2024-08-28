@@ -109,12 +109,12 @@ label{
 .tip__buttons input{
     padding: 0.4rem 0.4rem;
     color: var(--very-dark-cyan);
-    background: var(--light-gray-cyan);
+    background: hsl(185,41%,84%,0.3);
     border: none;
     border-radius: 0.2rem;
     font-weight: var(--font-weight);
-    cursor: pointer;
     width: 100%;
+    outline: none;
 }
 
 .tip__button{
@@ -144,7 +144,6 @@ label{
     font-size: var(--form-font-size);
     font-family: var(--font-family);
     font-weight: var(--font-weight);
-    color: var(--very-dark-cyan);
     outline: none;
     background: hsl(185,41%,84%,0.3);
     text-align: right;
@@ -192,12 +191,17 @@ label{
 }
 .reset__button{
     padding: 0.8em;
-    color: var(--very-dark-cyan);
-    background: var(--strong-cyan);
+    color: var(--gray-cyan);
+    background: var(--dark-gray-cyan);
     border: none;
     border-radius: 0.2rem;
     font-weight: var(--font-weight);
     cursor: pointer;
     text-transform: uppercase;
     font-size: 0.8rem;
+    
+}
+.active{
+    background: var(--strong-cyan);
+    color: var(--very-dark-cyan);
 }
